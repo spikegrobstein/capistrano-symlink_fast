@@ -8,7 +8,7 @@ On large deployments with a large number of configs, this can add significant ov
 
     require "symlink_fast/capistrano"
 
-    set :configs, [ :database, :redis, :aws ]
+    set :symlink_configs, [ :database, :redis, :aws ]
 
 SymlinkFast will add a post-deploy hook to symlink your config files.
 
