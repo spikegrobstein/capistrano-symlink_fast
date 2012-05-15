@@ -9,7 +9,7 @@ Capistrano::Configuration.instance.load do
   # we want to run the symlinking once the code is copied
   # but before any code is run that might depend on the
   # yaml files being in place.
-  after 'deploy:copy_code', 'symlink_fast'
+  after 'deploy:update_code', 'symlink_fast'
 
   namespace symlink_fast do
     task :default, :except => { :no_release => true } do
