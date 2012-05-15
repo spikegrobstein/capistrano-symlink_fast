@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Spike Grobstein"]
   s.email       = ["spikegrobstein@mac.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Fast Capistrano config symlinking}
+  s.description = %q{Symlink your configs in a single execution of run when deploying with Capistrano}
 
   s.rubyforge_project = "symlink_fast"
 
