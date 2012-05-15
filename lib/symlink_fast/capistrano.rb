@@ -11,7 +11,7 @@ Capistrano::Configuration.instance.load do
   # yaml files being in place.
   after 'deploy:update_code', 'symlink_fast'
 
-  namespace symlink_fast do
+  namespace :symlink_fast do
     task :default, :except => { :no_release => true } do
       run SymlinkFast::command( fetch(:symlink_configs, nil) )
     end
