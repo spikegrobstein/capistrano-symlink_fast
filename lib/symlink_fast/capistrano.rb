@@ -1,4 +1,4 @@
-require 'capistrano'
+require 'symlink_fast'
 
 Capistrano::Configuration.instance.load do
 
