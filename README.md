@@ -1,10 +1,20 @@
-# SymlinkFast
+# `symlink_fast`
 
-SymlinkFast is a Capistrano plugin for doing post-deploy symlinking of your yaml files in a single `run` cycle rather than iterating over each config file individually.
+`symlink_fast` is a Capistrano plugin for doing post-deploy symlinking of your yaml files in a single `run` cycle rather than iterating over each config file individually.
 
 On large deployments with a large number of configs, this can save significant overhead to the deploy time.
 
+## Installation
+
+    gem install symlink_fast
+
+to install normally, or put the following in your `Gemfile`:
+
+    gem 'symlink_fast'
+
 ## Example Usage
+
+In your capistrano recipe:
 
     require "symlink_fast/capistrano"
 
