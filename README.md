@@ -1,8 +1,8 @@
 # SymlinkFast
 
-SymlinkFast is a Capistrano extension for doing post-deploy symlinking of your yaml files in a single `run` cycle rather than iterating over each config file individually.
+SymlinkFast is a Capistrano plugin for doing post-deploy symlinking of your yaml files in a single `run` cycle rather than iterating over each config file individually.
 
-On large deployments with a large number of configs, this can add significant overhead to the deploy time.
+On large deployments with a large number of configs, this can save significant overhead to the deploy time.
 
 ## Example Usage
 
